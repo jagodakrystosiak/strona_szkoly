@@ -1,0 +1,74 @@
+.c-subnavigation {
+    position: fixed;
+    top: 275px;
+    width: 100%;
+    background-color: $white;
+
+    &--success {
+        border-top: 2px solid $success;
+        border-bottom: 2px solid $success;
+    }
+    &--warning {
+        border-top: 2px solid $warning;
+        border-bottom: 2px solid $warning;
+    }
+    &--info {
+        border-top: 2px solid $info;
+        border-bottom: 2px solid $info;
+    }
+    &--primary {
+        border-top: 2px solid $primary;
+        border-bottom: 2px solid $primary;
+    }
+
+    @include medium-up {
+        background-color:transparent;
+        top: 0;
+        width: 236px;
+        margin-left: 234px;
+        height: 100vh;
+        background-color: $white;
+        display: none;
+        z-index: 2;
+        animation: openTab .3s ease-in-out .1s;
+        border-top: 0;
+        border-bottom: 0;
+
+        &--success {
+            border-left: 2px solid $success;
+            border-right: 2px solid $success;
+        }
+        &--warning {
+            border-left: 2px solid $warning;
+            border-right: 2px solid $warning;
+        }
+        &--info {
+            border-left: 2px solid $info;
+            border-right: 2px solid $info;
+        }
+        &--primary {
+            border-left: 2px solid $primary;
+            border-right: 2px solid $primary;
+        }
+    }
+
+    @include xl-up {
+        margin-left: 294px;
+    }
+    
+    @include xxl-up {
+        margin-left: 354px;
+    }
+    
+}
+
+@keyframes openTab {
+    0% {
+        width: 0;
+        color: transparent;
+    }
+    100% {
+        width: 236px;
+        color: $dark;
+    }
+}
