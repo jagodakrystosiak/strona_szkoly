@@ -16,8 +16,15 @@
     <link rel="stylesheet" href="style/style.css">
 
     <!-- Scripts -->
-    <script src="js/script.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -28,8 +35,8 @@
             <div class="navbar-brand c-navigation__header">
                 <img class="img-fluid c-navigation__img" src="img/coat.svg" alt="Godło">
                 <h1>Szkoła<br>Podstawowa<br>nr. 23<br>im. Wisławy<br>Szymborskiej<br>w Warszawie</h1>
-                <button class="navbar-toggler c-navigation__button" type="button" data-toggle="collapse"
-                    data-target="#navContent">
+                <button class="navbar-toggler c-navigation__button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navContent">
                     <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path opacity="0.6"
                             d="M0.124103 1.33333C0.124103 0.596954 0.721057 0 1.45744 0H18.6667C19.403 0 20 0.596954 20 1.33333C20 2.06971 19.403 2.66667 18.6667 2.66667H1.45744C0.721056 2.66667 0.124103 2.06971 0.124103 1.33333ZM0 8C0 7.26362 0.596954 6.66667 1.33333 6.66667H18.6667C19.403 6.66667 20 7.26362 20 8C20 8.73638 19.403 9.33333 18.6667 9.33333H1.33333C0.596955 9.33333 0 8.73638 0 8ZM0 14.6667C0 13.9303 0.596953 13.3333 1.33333 13.3333H18.6667C19.403 13.3333 20 13.9303 20 14.6667C20 15.403 19.403 16 18.6667 16H1.33333C0.596953 16 0 15.403 0 14.6667Z"
@@ -38,32 +45,31 @@
                 </button>
             </div>
 
-            <ul class="collapse navbar-collapse navbar-nav list-unstyled c-navigation__nav" id="navContent">
+            <ul class="navbar-nav list-unstyled c-navigation__nav" id="navContent">
                 <li class="nav-item">
                     <a class="nav-link c-navigation__link c-navigation__link--gray" href="#">
                         Strona główna</a>
                 </li>
                 <li class="nav-item">
-                    <button class="reset_button" type="button" data-toggle="collapse"
-                    data-target="#oSzkole">
-                    <a class="nav-link c-navigation__link c-navigation__link--success" href="#">O
-                        szkole</a>
+                    <button class="reset_button " id="button_oSzkole">
+                        <a class="nav-link c-navigation__link c-navigation__link--success" href="#">O
+                            szkole</a>
                     </button>
                 </li>
                 <li class="nav-item">
-                    <button class="reset_button" type="button" data-toggle="collapse"
-                    data-target="#kandydaci"><a class="nav-link c-navigation__link c-navigation__link--warning"
-                    href="#">Kandydaci</a></button>
-                    </li>
+                    <button class="reset_button" id="button_kandydaci"><a
+                            class="nav-link c-navigation__link c-navigation__link--warning"
+                            href="#">Kandydaci</a></button>
+                </li>
                 <li class="nav-item">
-                    <button class="reset_button" type="button" data-toggle="collapse"
-                    data-target="#uczniowie">
-                    <a class="nav-link c-navigation__link c-navigation__link--info"
-                        href="#">Uczniowie</a></button></li>
+                    <button class="reset_button" id="button_uczniowie">
+                        <a class="nav-link c-navigation__link c-navigation__link--info" href="#">Uczniowie</a></button>
+                </li>
                 <li class="nav-item">
-                    <button class="reset_button" type="button" data-toggle="collapse"
-                    data-target="#rodzice"><a class="nav-link c-navigation__link c-navigation__link--primary"
-                        href="#">Rodzice</a></button></li>
+                    <button class="reset_button" id="button_rodzice"><a
+                            class="nav-link c-navigation__link c-navigation__link--primary"
+                            href="#">Rodzice</a></button>
+                </li>
                 <li class="nav-item"><a class="nav-link c-navigation__link c-navigation__link c-navigation__link--gray"
                         href="#">Kontakt</a></li>
                 <li class="nav-item"><a class="nav-link c-navigation__link c-navigation__link c-navigation__link--gray"
@@ -73,60 +79,7 @@
             </ul>
         </div>
 
-        <div class="collapse c-subnavigation c-subnavigation--success" id="oSzkole">
-            <div class="navbar">
-                <ul class="list-unstyled navbar-nav">
-                    <li class="nav-item"><a class="nav-link c-navigation__link c-navigation__link--success" href="#">Historia</a></li>
-                    <li class="nav-item"><a class="nav-link c-navigation__link c-navigation__link--success" href="#">Pracownicy</a></li>
-                    <li class="nav-item"><a class="nav-link c-navigation__link c-navigation__link--success" href="#">Dokumenty</a></li>
-                    <li class="nav-item"><a class="nav-link c-navigation__link c-navigation__link--success" href="#">Deklaracja dostępności</a></li>
-                    <li class="nav-item"><a class="nav-link c-navigation__link c-navigation__link--success" href="#">RODO</a></li>
-                    <li class="nav-item"><a class="nav-link c-navigation__link c-navigation__link--success" href="#">Przydatne linki</a></li>
-                    <li class="nav-item"><a class="nav-link c-navigation__link c-navigation__link--success" href="#">Bezpieczny internet</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="collapse c-subnavigation c-subnavigation--warning" id="kandydaci">
-            <div class="navbar">
-                <ul class="list-unstyled navbar-nav">
-                    <li class="nav-item"><a class="nav-link c-navigation__link c-navigation__link--warning" href="#">Historia</a></li>
-                    <li class="nav-item"><a class="nav-link c-navigation__link c-navigation__link--warning" href="#">Pracownicy</a></li>
-                    <li class="nav-item"><a class="nav-link c-navigation__link c-navigation__link--warning" href="#">Dokumenty</a></li>
-                    <li class="nav-item"><a class="nav-link c-navigation__link c-navigation__link--warning" href="#">Deklaracja dostępności</a></li>
-                    <li class="nav-item"><a class="nav-link c-navigation__link c-navigation__link--warning" href="#">RODO</a></li>
-                    <li class="nav-item"><a class="nav-link c-navigation__link c-navigation__link--warning" href="#">Przydatne linki</a></li>
-                    <li class="nav-item"><a class="nav-link c-navigation__link c-navigation__link--warning" href="#">Bezpieczny internet</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="collapse c-subnavigation c-subnavigation--info" id="uczniowie">
-            <div class="navbar">
-                <ul class="list-unstyled navbar-nav">
-                    <li class="nav-item"><a class="nav-link c-navigation__link c-navigation__link--info" href="#">Historia</a></li>
-                    <li class="nav-item"><a class="nav-link c-navigation__link c-navigation__link--info" href="#">Pracownicy</a></li>
-                    <li class="nav-item"><a class="nav-link c-navigation__link c-navigation__link--info" href="#">Dokumenty</a></li>
-                    <li class="nav-item"><a class="nav-link c-navigation__link c-navigation__link--info" href="#">Deklaracja dostępności</a></li>
-                    <li class="nav-item"><a class="nav-link c-navigation__link c-navigation__link--info" href="#">RODO</a></li>
-                    <li class="nav-item"><a class="nav-link c-navigation__link c-navigation__link--info" href="#">Przydatne linki</a></li>
-                    <li class="nav-item"><a class="nav-link c-navigation__link c-navigation__link--info" href="#">Bezpieczny internet</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="collapse c-subnavigation c-subnavigation--primary" id="rodzice">
-            <div class="navbar">
-                <ul class="list-unstyled navbar-nav">
-                    <li class="nav-item"><a class="nav-link c-navigation__link c-navigation__link--primary" href="#">Historia</a></li>
-                    <li class="nav-item"><a class="nav-link c-navigation__link c-navigation__link--primary" href="#">Pracownicy</a></li>
-                    <li class="nav-item"><a class="nav-link c-navigation__link c-navigation__link--primary" href="#">Dokumenty</a></li>
-                    <li class="nav-item"><a class="nav-link c-navigation__link c-navigation__link--primary" href="#">Deklaracja dostępności</a></li>
-                    <li class="nav-item"><a class="nav-link c-navigation__link c-navigation__link--primary" href="#">RODO</a></li>
-                    <li class="nav-item"><a class="nav-link c-navigation__link c-navigation__link--primary" href="#">Przydatne linki</a></li>
-                    <li class="nav-item"><a class="nav-link c-navigation__link c-navigation__link--primary" href="#">Bezpieczny internet</a></li>
-                </ul>
-            </div>
+        <div class="hidden c-subnavigation" id="subMenu">
         </div>
 
         <!-- Zdjęcie szkoły znajdujące się na samej górze strony -->
@@ -227,6 +180,8 @@
         </div>
 
     </main>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

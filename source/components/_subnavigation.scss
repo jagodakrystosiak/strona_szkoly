@@ -3,6 +3,7 @@
     top: 275px;
     width: 100%;
     background-color: $white;
+    padding: 8px 16px;
 
     &--success {
         border-top: 2px solid $success;
@@ -28,7 +29,6 @@
         margin-left: 234px;
         height: 100vh;
         background-color: $white;
-        display: none;
         z-index: 2;
         animation: openTab .3s ease-in-out .1s;
         border-top: 0;
@@ -52,23 +52,21 @@
         }
     }
 
-    // @include xl-up {
-    //     margin-left: 294px;
-    // }
-    
-    // @include xxl-up {
-    //     margin-left: 354px;
-    // }
+    @include media-breakpoint-up(xl){
+        margin-left: 294px;
+    }
+
+    @include media-breakpoint-up(xxl){
+        margin-left: 354px;
+    }
     
 }
 
 @keyframes openTab {
     0% {
         width: 0;
-        color: transparent;
     }
     100% {
         width: 236px;
-        color: $dark;
     }
 }
