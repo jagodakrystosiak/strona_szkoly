@@ -1,5 +1,8 @@
 .container {
     margin-left: 0;
+    margin-right: 0;
+    margin-top: 45px;
+    max-width: 100%;
 
     @media (min-width: '768px') {
         margin-left: 236px;
@@ -12,6 +15,7 @@
 
     @media (min-width: '1400px') {
         margin-left: 120px + 265px;
-        margin-right: 120px + 265px;
+        margin-right: 120px + 132.5px;
     }
+
 }

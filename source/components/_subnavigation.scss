@@ -1,54 +1,58 @@
 .c-subnavigation {
-    position: fixed;
+    position: absolute;
     top: 275px;
     width: 100%;
+    min-height: 705px - 275px;
     background-color: $white;
     padding: 8px 16px;
+    z-index: 2;
+    font-size: 18px;
+    line-height: 30px;
 
-    &--success {
-        border-top: 2px solid $success;
-        border-bottom: 2px solid $success;
+    &--orange {
+        border-top: 2px solid $v-orange;
+        border-bottom: 2px solid $v-orange;
     }
-    &--warning {
-        border-top: 2px solid $warning;
-        border-bottom: 2px solid $warning;
+    &--yellow {
+        border-top: 2px solid $v-yellow;
+        border-bottom: 2px solid $v-yellow;
     }
-    &--info {
-        border-top: 2px solid $info;
-        border-bottom: 2px solid $info;
+    &--yellow-green {
+        border-top: 2px solid $v-yellow-green;
+        border-bottom: 2px solid $v-yellow-green;
     }
-    &--primary {
-        border-top: 2px solid $primary;
-        border-bottom: 2px solid $primary;
+    &--green {
+        border-top: 2px solid $v-green;
+        border-bottom: 2px solid $v-green;
     }
 
     @media (min-width: '768px') {
         background-color:transparent;
+        position: fixed;
         top: 0;
         width: 236px;
         margin-left: 234px;
         height: 100vh;
         background-color: $white;
-        z-index: 2;
         animation: openTab .3s ease-in-out .1s;
         border-top: 0;
         border-bottom: 0;
 
-        &--success {
-            border-left: 2px solid $success;
-            border-right: 2px solid $success;
+        &--orange {
+            border-left: 2px solid $v-orange;
+            border-right: 2px solid $v-orange;
         }
-        &--warning {
-            border-left: 2px solid $warning;
-            border-right: 2px solid $warning;
+        &--yellow {
+            border-left: 2px solid $v-yellow;
+            border-right: 2px solid $v-yellow;
         }
-        &--info {
-            border-left: 2px solid $info;
-            border-right: 2px solid $info;
+        &--yellow-green {
+            border-left: 2px solid $v-yellow-green;
+            border-right: 2px solid $v-yellow-green;
         }
-        &--primary {
-            border-left: 2px solid $primary;
-            border-right: 2px solid $primary;
+        &--green {
+            border-left: 2px solid $v-green;
+            border-right: 2px solid $v-green;
         }
     }
 

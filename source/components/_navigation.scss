@@ -1,21 +1,34 @@
 .c-navigation {
     background-color: rgba($color: #FFFFFF, $alpha: .75);
     padding: 0;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
 
-    @media (min-width: '768px') {
+    & .nav-item:hover {
+        & .c-navigation__link-underline {
+            width: 100%;
+            transition: width 0.4s ease-in-out;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
         padding: 8px 16px;
         width: 236px;
         height: 100vh;
         border-right: 2px solid;
-        z-index: 1;
+        position: fixed;
+        top: 0;
     }
 
-    @media (min-width: '1200px') {
+    @include media-breakpoint-up(xl) {
         border-left: 2px solid;
         margin-left: 60px;
     }
 
-    @media (min-width: '1400px') {
+    @include media-breakpoint-up(xxl) {
         margin-left: 120px;
     }
 
@@ -25,7 +38,7 @@
         height: 275px;
         margin: auto;
 
-        @media (min-width: '768px') {
+        @include media-breakpoint-up(md) {
             width: 236px;
         }
 
@@ -33,7 +46,7 @@
             font-size: 18px;
             font-weight: bold;
 
-            @media (min-width: '768px') {
+            @include media-breakpoint-up(md) {
                 font-size: 24px;
             }
         }
@@ -54,7 +67,7 @@
         border-bottom: 2px solid rgb(220, 53, 69);
         padding: 8px 16px;
 
-        @media (min-width: '768px') {
+        @include media-breakpoint-up(md) {
             background-color: transparent;
             display: block;
             border-top: 0;
@@ -66,7 +79,7 @@
     &__button {
         display: inline-block;
 
-        @media (min-width: '768px') {
+        @include media-breakpoint-up(md) {
             display: none;
         }
     }
@@ -74,27 +87,68 @@
     &__link {
         color: $dark;
         border-bottom: 2px solid transparent;
-        transition: all .5s ease-in-out;
 
-        &--gray:hover {
-            // color: $gray;
-            // border-color: $gray;
+        &--dark-orange:hover {
+            transition: color .5s ease-in-out;
+            color: $v-dark-orange;
         }
-        &--success:hover {
-            color: $success;
-            border-color: $success;
+        &--orange:hover {
+            transition: color .5s ease-in-out;
+            color: $v-orange;
         }
-        &--warning:hover {
-            color: $warning;
-            border-color: $warning;
+        &--yellow:hover {
+            transition: color .5s ease-in-out;
+            color: $v-yellow;
         }
-        &--info:hover {
-            color: $info;
-            border-color: $info;
+        &--yellow-green:hover {
+            transition: color .5s ease-in-out;
+            color: $v-yellow-green;
         }
-        &--primary:hover {
-            color: $primary;
-            border-color: $primary;
+        &--green:hover {
+            transition: color .5s ease-in-out;
+            color: $v-green;
+        }
+        &--green-blue:hover {
+            transition: color .5s ease-in-out;
+            color: $v-green-blue;
+        }
+        &--blue:hover {
+            transition: color .5s ease-in-out;
+            color: $v-blue;
+        }
+        &--purple:hover {
+            transition: color .5s ease-in-out;
+            color: $v-purple;
+        }
+    }
+
+    &__link-underline {
+        height: 2px;
+        width: 0%;
+
+        &--dark-orange {
+            background-color: $v-dark-orange;
+        }
+        &--orange {
+            background-color: $v-orange;
+        }
+        &--yellow {
+            background-color: $v-yellow;
+        }
+        &--yellow-green {
+            background-color: $v-yellow-green;
+        }
+        &--green {
+            background-color: $v-green;
+        }
+        &--green-blue {
+            background-color: $v-green-blue;
+        }
+        &--blue {
+            background-color: $v-blue;
+        }
+        &--purple {
+            background-color: $v-purple;
         }
     }
 
@@ -105,4 +159,15 @@
         margin-right: 500px;
     }
 
+
+    &--mobile {
+        position: fixed;
+        top: 275px;
+        width: 100%;
+        background-color: $white;
+        padding: 8px 16px;
+        border-top: 2px solid $danger;
+        border-bottom: 2px solid $danger;
+
+    }
 }

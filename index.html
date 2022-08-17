@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Szkoła Podstawowa nr. 23 w Warszawie</title>
+    <title>Szkoła Podstawowa nr. 33 w Lublinie</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,14 +29,13 @@
 
 <body>
     <header>
-        <!-- Nawigacja -->
-        <div class="navbar border-danger fixed-top c-navigation">
+        <!-- NAVIGATION -->
+        <div class="navbar border-danger c-navigation">
 
             <div class="navbar-brand c-navigation__header">
                 <img class="img-fluid c-navigation__img" src="img/coat.svg" alt="Godło">
-                <h1>Szkoła<br>Podstawowa<br>nr. 23<br>im. Wisławy<br>Szymborskiej<br>w Warszawie</h1>
-                <button class="navbar-toggler c-navigation__button" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navContent">
+                <h1>Szkoła<br>Podstawowa<br>nr. 33<br>im. Wisławy<br>Szymborskiej<br>w Lublinie</h1>
+                <button class="navbar-toggler border-0 c-navigation__button" id="button_menu">
                     <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path opacity="0.6"
                             d="M0.124103 1.33333C0.124103 0.596954 0.721057 0 1.45744 0H18.6667C19.403 0 20 0.596954 20 1.33333C20 2.06971 19.403 2.66667 18.6667 2.66667H1.45744C0.721056 2.66667 0.124103 2.06971 0.124103 1.33333ZM0 8C0 7.26362 0.596954 6.66667 1.33333 6.66667H18.6667C19.403 6.66667 20 7.26362 20 8C20 8.73638 19.403 9.33333 18.6667 9.33333H1.33333C0.596955 9.33333 0 8.73638 0 8ZM0 14.6667C0 13.9303 0.596953 13.3333 1.33333 13.3333H18.6667C19.403 13.3333 20 13.9303 20 14.6667C20 15.403 19.403 16 18.6667 16H1.33333C0.596953 16 0 15.403 0 14.6667Z"
@@ -45,37 +44,52 @@
                 </button>
             </div>
 
-            <ul class="navbar-nav list-unstyled c-navigation__nav" id="navContent">
+            <ul class="navbar-nav list-unstyled c-navigation__nav" id="menu">
                 <li class="nav-item">
-                    <a class="nav-link c-navigation__link c-navigation__link--gray" href="#">
-                        Strona główna</a>
+                    <a class="nav-link c-navigation__link c-navigation__link--dark-orange" href="index.html">Strona
+                        główna</a>
+                    <div class="c-navigation__link-underline c-navigation__link-underline--dark-orange"></div>
                 </li>
                 <li class="nav-item">
-                    <button class="reset_button " id="button_oSzkole">
-                        <a class="nav-link c-navigation__link c-navigation__link--success" href="#">O
-                            szkole</a>
-                    </button>
+                    <div class="nav-link c-navigation__link">
+                        <button class="reset_button c-navigation__link--orange" id="button_oSzkole">O szkole</button>
+                    </div>
+                    <div class="c-navigation__link-underline c-navigation__link-underline--orange"></div>
                 </li>
                 <li class="nav-item">
-                    <button class="reset_button" id="button_kandydaci"><a
-                            class="nav-link c-navigation__link c-navigation__link--warning"
-                            href="#">Kandydaci</a></button>
+                    <div class="nav-link c-navigation__link">
+                        <button class="reset_button c-navigation__link--yellow" id="button_kandydaci">Kandydaci</button>
+                    </div>
+                    <div class="c-navigation__link-underline c-navigation__link-underline--yellow"></div>
                 </li>
                 <li class="nav-item">
-                    <button class="reset_button" id="button_uczniowie">
-                        <a class="nav-link c-navigation__link c-navigation__link--info" href="#">Uczniowie</a></button>
+                    <div class="nav-link c-navigation__link">
+                        <button class="reset_button c-navigation__link--yellow-green"
+                            id="button_uczniowie">Uczniowie</button>
+                    </div>
+                    <div class="c-navigation__link-underline c-navigation__link-underline--yellow-green"></div>
                 </li>
                 <li class="nav-item">
-                    <button class="reset_button" id="button_rodzice"><a
-                            class="nav-link c-navigation__link c-navigation__link--primary"
-                            href="#">Rodzice</a></button>
+                    <div class="nav-link c-navigation__link">
+                        <button class="reset_button c-navigation__link--green" id="button_rodzice">Rodzice</button>
+                    </div>
+                    <div class="c-navigation__link-underline c-navigation__link-underline--green"></div>
                 </li>
-                <li class="nav-item"><a class="nav-link c-navigation__link c-navigation__link c-navigation__link--gray"
-                        href="#">Kontakt</a></li>
-                <li class="nav-item"><a class="nav-link c-navigation__link c-navigation__link c-navigation__link--gray"
-                        href="#">Galeria</a></li>
-                <li class="nav-item"><a class="nav-link c-navigation__link c-navigation__link c-navigation__link--gray"
-                        href="#">E-dziennik</a></li>
+                <li class="nav-item">
+                    <a class="nav-link c-navigation__link c-navigation__link c-navigation__link--green-blue"
+                        href="#">Kontakt</a>
+                    <div class="c-navigation__link-underline c-navigation__link-underline--green-blue"></div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link c-navigation__link c-navigation__link c-navigation__link--blue"
+                        href="#">Galeria</a>
+                    <div class="c-navigation__link-underline c-navigation__link-underline--blue"></div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link c-navigation__link c-navigation__link c-navigation__link--purple"
+                        href="https://logowanie.edu.lublin.eu/LoginPage.aspx?ReturnUrl=%2f%3fwa%3dwsignin1.0%26wtrealm%3dhttps%253a%252f%252fcufs.edu.lublin.eu%253a443%252flublin%252fAccount%252fLogOn%26wctx%3drm%253d0%2526id%253dAdfsLight%2526ru%253d%25252flublin%25252fFS%25252fLS%25253fwa%25253dwsignin1.0%252526wtrealm%25253dhttps%2525253A%2525252F%2525252Fuonetplus.edu.lublin.eu%2525252Flublin%2525252FLoginEndpoint.aspx%252526wctx%25253dhttps%2525253A%2525252F%2525252Fuonetplus.edu.lublin.eu%2525252Flublin%2525252FLoginEndpoint.aspx%26wct%3d2022-08-17T09%253a19%253a21Z">E-dziennik</a>
+                    <div class="c-navigation__link-underline c-navigation__link-underline--purple"></div>
+                </li>
             </ul>
         </div>
 
@@ -84,104 +98,92 @@
 
         <!-- Zdjęcie szkoły znajdujące się na samej górze strony -->
         <div class="jumbotron jumbotron-fluid c-herounit"></div>
+
     </header>
 
-    <main>
-
-        <div class="container">
-            <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque vitae possimus et, amet adipisci vel
-                nulla ex laborum corporis laboriosam omnis labore autem nostrum illo ullam ipsam odio corrupti
-                perspiciatis?</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non autem iure veniam ea facilis accusamus
-                corrupti officiis itaque, consectetur placeat repudiandae? Atque sit, dolorum iste error quos debitis
-                sed mollitia et doloribus, aut officiis odit obcaecati exercitationem repudiandae ipsum accusantium quo,
-                inventore aliquam dolore quia nesciunt ipsa? Similique quod minima exercitationem aliquam praesentium
-                corrupti ipsa animi non, sequi harum aut aspernatur placeat facere quaerat et. Magni suscipit facilis
-                aut nemo cum eaque veniam, enim nulla, officiis nostrum, mollitia sint molestiae nihil vero eum animi
-                corrupti sit optio at. Ullam blanditiis quisquam aliquam sit quis suscipit animi mollitia officia ipsum
-                exercitationem.</p>
-            <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque vitae possimus et, amet adipisci vel
-                nulla ex laborum corporis laboriosam omnis labore autem nostrum illo ullam ipsam odio corrupti
-                perspiciatis?</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non autem iure veniam ea facilis accusamus
-                corrupti officiis itaque, consectetur placeat repudiandae? Atque sit, dolorum iste error quos debitis
-                sed mollitia et doloribus, aut officiis odit obcaecati exercitationem repudiandae ipsum accusantium quo,
-                inventore aliquam dolore quia nesciunt ipsa? Similique quod minima exercitationem aliquam praesentium
-                corrupti ipsa animi non, sequi harum aut aspernatur placeat facere quaerat et. Magni suscipit facilis
-                aut nemo cum eaque veniam, enim nulla, officiis nostrum, mollitia sint molestiae nihil vero eum animi
-                corrupti sit optio at. Ullam blanditiis quisquam aliquam sit quis suscipit animi mollitia officia ipsum
-                exercitationem.</p>
-            <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque vitae possimus et, amet adipisci vel
-                nulla ex laborum corporis laboriosam omnis labore autem nostrum illo ullam ipsam odio corrupti
-                perspiciatis?</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non autem iure veniam ea facilis accusamus
-                corrupti officiis itaque, consectetur placeat repudiandae? Atque sit, dolorum iste error quos debitis
-                sed mollitia et doloribus, aut officiis odit obcaecati exercitationem repudiandae ipsum accusantium quo,
-                inventore aliquam dolore quia nesciunt ipsa? Similique quod minima exercitationem aliquam praesentium
-                corrupti ipsa animi non, sequi harum aut aspernatur placeat facere quaerat et. Magni suscipit facilis
-                aut nemo cum eaque veniam, enim nulla, officiis nostrum, mollitia sint molestiae nihil vero eum animi
-                corrupti sit optio at. Ullam blanditiis quisquam aliquam sit quis suscipit animi mollitia officia ipsum
-                exercitationem.</p>
-            <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque vitae possimus et, amet adipisci vel
-                nulla ex laborum corporis laboriosam omnis labore autem nostrum illo ullam ipsam odio corrupti
-                perspiciatis?</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non autem iure veniam ea facilis accusamus
-                corrupti officiis itaque, consectetur placeat repudiandae? Atque sit, dolorum iste error quos debitis
-                sed mollitia et doloribus, aut officiis odit obcaecati exercitationem repudiandae ipsum accusantium quo,
-                inventore aliquam dolore quia nesciunt ipsa? Similique quod minima exercitationem aliquam praesentium
-                corrupti ipsa animi non, sequi harum aut aspernatur placeat facere quaerat et. Magni suscipit facilis
-                aut nemo cum eaque veniam, enim nulla, officiis nostrum, mollitia sint molestiae nihil vero eum animi
-                corrupti sit optio at. Ullam blanditiis quisquam aliquam sit quis suscipit animi mollitia officia ipsum
-                exercitationem.</p>
-            <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque vitae possimus et, amet adipisci vel
-                nulla ex laborum corporis laboriosam omnis labore autem nostrum illo ullam ipsam odio corrupti
-                perspiciatis?</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non autem iure veniam ea facilis accusamus
-                corrupti officiis itaque, consectetur placeat repudiandae? Atque sit, dolorum iste error quos debitis
-                sed mollitia et doloribus, aut officiis odit obcaecati exercitationem repudiandae ipsum accusantium quo,
-                inventore aliquam dolore quia nesciunt ipsa? Similique quod minima exercitationem aliquam praesentium
-                corrupti ipsa animi non, sequi harum aut aspernatur placeat facere quaerat et. Magni suscipit facilis
-                aut nemo cum eaque veniam, enim nulla, officiis nostrum, mollitia sint molestiae nihil vero eum animi
-                corrupti sit optio at. Ullam blanditiis quisquam aliquam sit quis suscipit animi mollitia officia ipsum
-                exercitationem.</p>
-            <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque vitae possimus et, amet adipisci vel
-                nulla ex laborum corporis laboriosam omnis labore autem nostrum illo ullam ipsam odio corrupti
-                perspiciatis?</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non autem iure veniam ea facilis accusamus
-                corrupti officiis itaque, consectetur placeat repudiandae? Atque sit, dolorum iste error quos debitis
-                sed mollitia et doloribus, aut officiis odit obcaecati exercitationem repudiandae ipsum accusantium quo,
-                inventore aliquam dolore quia nesciunt ipsa? Similique quod minima exercitationem aliquam praesentium
-                corrupti ipsa animi non, sequi harum aut aspernatur placeat facere quaerat et. Magni suscipit facilis
-                aut nemo cum eaque veniam, enim nulla, officiis nostrum, mollitia sint molestiae nihil vero eum animi
-                corrupti sit optio at. Ullam blanditiis quisquam aliquam sit quis suscipit animi mollitia officia ipsum
-                exercitationem.</p>
-            <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque vitae possimus et, amet adipisci vel
-                nulla ex laborum corporis laboriosam omnis labore autem nostrum illo ullam ipsam odio corrupti
-                perspiciatis?</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non autem iure veniam ea facilis accusamus
-                corrupti officiis itaque, consectetur placeat repudiandae? Atque sit, dolorum iste error quos debitis
-                sed mollitia et doloribus, aut officiis odit obcaecati exercitationem repudiandae ipsum accusantium quo,
-                inventore aliquam dolore quia nesciunt ipsa? Similique quod minima exercitationem aliquam praesentium
-                corrupti ipsa animi non, sequi harum aut aspernatur placeat facere quaerat et. Magni suscipit facilis
-                aut nemo cum eaque veniam, enim nulla, officiis nostrum, mollitia sint molestiae nihil vero eum animi
-                corrupti sit optio at. Ullam blanditiis quisquam aliquam sit quis suscipit animi mollitia officia ipsum
-                exercitationem.</p>
-            <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque vitae possimus et, amet adipisci vel
-                nulla ex laborum corporis laboriosam omnis labore autem nostrum illo ullam ipsam odio corrupti
-                perspiciatis?</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non autem iure veniam ea facilis accusamus
-                corrupti officiis itaque, consectetur placeat repudiandae? Atque sit, dolorum iste error quos debitis
-                sed mollitia et doloribus, aut officiis odit obcaecati exercitationem repudiandae ipsum accusantium quo,
-                inventore aliquam dolore quia nesciunt ipsa? Similique quod minima exercitationem aliquam praesentium
-                corrupti ipsa animi non, sequi harum aut aspernatur placeat facere quaerat et. Magni suscipit facilis
-                aut nemo cum eaque veniam, enim nulla, officiis nostrum, mollitia sint molestiae nihil vero eum animi
-                corrupti sit optio at. Ullam blanditiis quisquam aliquam sit quis suscipit animi mollitia officia ipsum
-                exercitationem.</p>
+    <section class="p-home-page">
+        <div class="c-date">
+            <div class="c-date__content">
+                Dziś jest <span id="dzien-tyg"></span>, <span id="dzien"></span> <span id="miesiac"></span> <span
+                    id="rok"></span>
+            </div>
         </div>
+        <div class="container">
+            <h1 class="border-bottom text-center mb-4">Aktualności</h1>
+            <div class="text-center border border-danger rounded p-4 p-home-page__news">
+                <h2>Zakończenie roku szkolnego 2021/2022</h2>
+                <p>Zakończenie roku szkolnego odbędzie się 23 czerwca 2022 dla klas 8 szkoły podstawowej, a dnia 24
+                    czerwca 2022 dla uczniów klas 0-7. <br>
+                    Dokładne informacje o sali i godzinie dla konkretnej klasy dostępne <a href="#">tutaj</a></p>
+                <button class="btn btn-danger">Dowiedz się więcej</button>
+            </div>
+            <div class="my-4">
+                <h2>Półkolonie w okresie 27 czerwca do 15 lipca 2022r.</h2>
+                <a href="#">
+                    <h5>Komunikat Dyrektora Szkoły Podstawowej nr 42 w Lublinie z dnia 22 czerwca 2022 r.
+                        w sprawie półkolonii w okresie od 27 czerwca do 15 lipca 2022 r.</h5>
+                </a>
+            </div>
+            <div class="my-4">
+                <h2>Opieka dla dzieci przedszkolnych w okresie ferii letnich</h2>
+                <a href="#">
+                    <h5>Komunikat Dyrektora Szkoły Podstawowej nr 42 w Lublinie z dnia 30 maja 2022 r.
+                        w sprawie opieki dla dzieci przedszkolnych w okresie ferii letnich.</h5>
+                </a>
+            </div>
+            <div class="my-4">
+                <h2>Zwroty do biblioteki szkolnej wypożyczonych książek, podręczników oraz innych materiałów edukacyjnych</h2>
+                <a href="#">
+                    <h5>Komunikat Dyrektora Szkoły Podstawowej nr 42 w Lublinie z dnia 1 czerwca 2022 r.
+                        w sprawie zwrotu do biblioteki szkolnej wypożyczonych książek, podręczników oraz innych materiałów edukacyjnych</h5>
+                </a>
+            </div>
+            <div class="my-4">
+                <h2>Zapisy do świetlicy lub stołówki szkolnej w roku szkolnym 2022/2023</h2>
+                <a href="#">
+                    <h5>Komunikat Dyrektora Szkoły Podstawowej nr 42 w Lublinie z dnia 27 maja 2022 r.
+                        w sprawie zapisów do świetlicy lub stołówki szkolnej w roku szkolnym 2022/2023</h5>
+                </a>
+            </div>
+            <div class="my-4">
+                <h2>Uzupełnienie danych wychowanków oddziału przedszkolnego 2022/2023</h2>
+                <a href="#">
+                    <h5>Komunikat Dyrektora Szkoły Podstawowej nr 42 w Lublinie z dnia 26 maja 2022 r.
+                        w sprawie uzupełnienia danych wychowanków oddziału przedszkolnego 2022/2023.</h5>
+                </a>
+            </div>
+            <div class="my-4">
+                <h2>Uzupełnienie danych wychowanków oddziału przedszkolnego 2022/2023</h2>
+                <a href="#">
+                    <h5>Komunikat Dyrektora Szkoły Podstawowej nr 42 w Lublinie z dnia 26 maja 2022 r.
+                        w sprawie uzupełnienia danych uczniów klasy I 2022/2023</h5>
+                </a>
+            </div>
+            <div class="my-4">
+                <h2>Uzupełnienie danych wychowanków oddziału przedszkolnego 2022/2023</h2>
+                <a href="#">
+                    <h5>Komunikat Dyrektora Szkoły Podstawowej nr 42 w Lublinie z dnia 26 maja 2022 r.
+                        w sprawie uzupełnienia danych wychowanków oddziału przedszkolnego 2022/2023.</h5>
+                </a>
+            </div>
+        </div>
+    </section>
 
-    </main>
+    <footer class="">
+        <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <img class="img-fluid" src="img/bip.jpg" alt="Biuletyn informacji publicznej">
+                    </div>
+                    <div class="col">
+                        <img src="img/office365.png" alt="Office 365">
+                    </div>
+                </div>
+        </div>
+    </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/navigation.js"></script>
 </body>
 
 </html>
